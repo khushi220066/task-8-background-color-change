@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editor Style Customizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1 class="site-title">Editor Customizer</h1>
+    <p class="subtitle">Pick a box, style it your way.</p>
+
+    <div class="controls-bar">
+      <div class="control-group">
+        <label for="bgColor">Background</label>
+        <input type="color" id="bgColor" value="#ffffff" />
+      </div>
+      <div class="control-group">
+        <label for="textColor">Text Color</label>
+        <input type="color" id="textColor" value="#222222" />
+      </div>
+      <div class="control-group">
+        <label for="fontFamily">Font</label>
+        <select id="fontFamily">
+          <option value="'Segoe UI', sans-serif">Segoe UI</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="'Courier New', monospace">Courier New</option>
+          <option value="Arial, sans-serif">Arial</option>
+          <option value="'Times New Roman', serif">Times New Roman</option>
+          <option value="Verdana, sans-serif">Verdana</option>
+          <option value="'Trebuchet MS', sans-serif">Trebuchet MS</option>
+          <option value="'Comic Sans MS', cursive">Comic Sans MS</option>
+        </select>
+      </div>
+      <button id="applyBtn">Apply to Selected</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="editors-grid">
+
+      <div class="editor-card">
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="card-label">Box 1</span>
+        </div>
+        <textarea class="editor-box" placeholder="Start typing here...">Hello! This is editor box one. Click to select it, then pick your styles above.</textarea>
+      </div>
+
+      <div class="editor-card">
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="card-label">Box 2</span>
+        </div>
+        <textarea class="editor-box" placeholder="Start typing here...">Editor box two is here. Try a different font or colour on this one.</textarea>
+      </div>
+
+      <div class="editor-card">
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="card-label">Box 3</span>
+        </div>
+        <textarea class="editor-box" placeholder="Start typing here...">Box three! Each box can have its own unique look — go wild.</textarea>
+      </div>
+
+      <div class="editor-card">
+        <div class="card-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="card-label">Box 4</span>
+        </div>
+        <textarea class="editor-box" placeholder="Start typing here...">The fourth editor. Mix and match styles across all four boxes.</textarea>
+      </div>
+
+    </div>
+
+    <p class="hint" id="hint">👆 Click any editor box to select it, then hit <strong>Apply</strong>.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
